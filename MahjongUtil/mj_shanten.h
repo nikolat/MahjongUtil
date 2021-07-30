@@ -56,7 +56,7 @@ public:
 	static int GetShanten(const string_t tehai);
 	static int GetShanten(const string_t tehai, vector_str& composition);
 	//シャンテン数の取得(役あり)
-	static int GetShantenYaku(const string_t tehai, string_t bafu_hai, string_t jifu_hai, vector_str& yaku);
+	static int GetShantenYaku(const string_t tehai, const string_t bafu_hai, const string_t jifu_hai, vector_str& yaku);
 	//シャンテン数の取得(一般手)
 	static int GetShantenNormal(const string_t tehai, vector_str& composition);
 	//シャンテン数の取得(七対子)

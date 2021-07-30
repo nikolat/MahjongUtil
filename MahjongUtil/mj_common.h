@@ -34,7 +34,7 @@ namespace MJ_FUNC {
 	vector_str Uniq(const vector_str ary);
 	vector<vector_str> Uniq(const vector<vector_str> ary);
 	vector<vector<int>> Uniq(const vector<vector<int>> ary);
-	vector<vector<vector<vector<int>>>> Uniq(vector<vector<vector<vector<int>>>> ary);
+	vector<vector<vector<vector<int>>>> Uniq(const vector<vector<vector<vector<int>>>> ary);
 	//YAYAのASEARCH
 	int ASEARCH(const string_t key, const vector_str ary);
 	int ASEARCH(const int key, const vector<int> ary);

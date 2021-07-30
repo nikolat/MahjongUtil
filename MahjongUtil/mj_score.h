@@ -59,11 +59,11 @@ private:
 	//混老頭判定
 	static bool IsHonroutou(const vector_str hai_plain);
 	//混全帯么九、純全帯么九判定用
-	static int SubChanta(const vector<vector_str> mentsu, string_t atama_hai);
+	static int SubChanta(const vector<vector_str> mentsu, const string_t atama_hai);
 	//混全帯么九判定
-	static bool IsChanta(const vector<vector_str> mentsu, string_t atama_hai);
+	static bool IsChanta(const vector<vector_str> mentsu, const string_t atama_hai);
 	//純全帯么九判定
-	static bool IsJunchan(const vector<vector_str> mentsu, string_t atama_hai);
+	static bool IsJunchan(const vector<vector_str> mentsu, const string_t atama_hai);
 	//小三元判定
 	static bool IsShousangen(const vector<vector_str>  mentsu);
 	//大三元判定

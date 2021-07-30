@@ -18,11 +18,11 @@ private:
 	//牌の有効枚数を取得
 	int CountEffectiveNumberOfHai(const string_t tehai);
 	//引数取得:文字列型
-	string_t GetStringOfArgument(const CSAORIInput& in, size_t n);
+	string_t GetStringOfArgument(const CSAORIInput& in, const size_t n);
 	//引数取得:数値型
-	int GetNumberOfArgument(const CSAORIInput& in, size_t n);
+	int GetNumberOfArgument(const CSAORIInput& in, const size_t n);
 	//引数取得:論理型
-	bool GetFlagOfArgument(const CSAORIInput& in, size_t n);
+	bool GetFlagOfArgument(const CSAORIInput& in, const size_t n);
 
 public:
 	virtual bool load(void);

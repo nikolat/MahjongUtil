@@ -200,7 +200,7 @@ int CSAORIMahjongUtil::CountEffectiveNumberOfHai(const string_t tehai)
 }
 
 //引数取得:文字列型
-string_t CSAORIMahjongUtil::GetStringOfArgument(const CSAORIInput& in, size_t n)
+string_t CSAORIMahjongUtil::GetStringOfArgument(const CSAORIInput& in, const size_t n)
 {
 	string_t ret = L"";
 	if (in.args.size() >= n + 1)
@@ -211,7 +211,7 @@ string_t CSAORIMahjongUtil::GetStringOfArgument(const CSAORIInput& in, size_t n)
 }
 
 //引数取得:数値型
-int CSAORIMahjongUtil::GetNumberOfArgument(const CSAORIInput& in, size_t n)
+int CSAORIMahjongUtil::GetNumberOfArgument(const CSAORIInput& in, const size_t n)
 {
 	int ret = 0;
 	if (in.args.size() >= n + 1)
@@ -225,7 +225,7 @@ int CSAORIMahjongUtil::GetNumberOfArgument(const CSAORIInput& in, size_t n)
 }
 
 //引数取得:論理型
-bool CSAORIMahjongUtil::GetFlagOfArgument(const CSAORIInput& in, size_t n)
+bool CSAORIMahjongUtil::GetFlagOfArgument(const CSAORIInput& in, const size_t n)
 {
 	bool ret = false;
 	if (in.args.size() >= n + 1)

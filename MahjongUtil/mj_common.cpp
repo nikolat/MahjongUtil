@@ -365,7 +365,7 @@ namespace MJ_FUNC {
 		}
 		return ret;
 	}
-	vector<vector<vector<vector<int>>>> Uniq(vector<vector<vector<vector<int>>>> ary)
+	vector<vector<vector<vector<int>>>> Uniq(const vector<vector<vector<vector<int>>>> ary)
 	{
 		vector<vector<vector<vector<int>>>> ret;
 		vector_str retCheck;

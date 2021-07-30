@@ -30,7 +30,7 @@ int Shanten::GetShanten(const string_t tehai, vector_str& composition)
 }
 
 //シャンテン数の取得(役あり)
-int Shanten::GetShantenYaku(const string_t tehai, string_t bafu_hai, string_t jifu_hai, vector_str& yaku)
+int Shanten::GetShantenYaku(const string_t tehai, const string_t bafu_hai, const string_t jifu_hai, vector_str& yaku)
 {
 	int r_chitoitsu = GetShantenChitoitsu(tehai);
 	int r_kokushimusou = GetShantenKokushimusou(tehai);

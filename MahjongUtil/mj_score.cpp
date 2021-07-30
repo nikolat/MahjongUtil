@@ -758,7 +758,7 @@ bool Score::IsHonroutou(const vector_str hai_plain)
 }
 
 //混全帯么九、純全帯么九判定用
-int Score::SubChanta(const vector<vector_str> mentsu, string_t atama_hai)
+int Score::SubChanta(const vector<vector_str> mentsu, const string_t atama_hai)
 {
 	if (mentsu.size() < 4)
 		return 0;
@@ -803,7 +803,7 @@ int Score::SubChanta(const vector<vector_str> mentsu, string_t atama_hai)
 }
 
 //混全帯么九判定
-bool Score::IsChanta(const vector<vector_str> mentsu, string_t atama_hai)
+bool Score::IsChanta(const vector<vector_str> mentsu, const string_t atama_hai)
 {
 	int r = SubChanta(mentsu, atama_hai);
 	if (r == 1)
@@ -812,7 +812,7 @@ bool Score::IsChanta(const vector<vector_str> mentsu, string_t atama_hai)
 }
 
 //純全帯么九判定
-bool Score::IsJunchan(const vector<vector_str> mentsu, string_t atama_hai)
+bool Score::IsJunchan(const vector<vector_str> mentsu, const string_t atama_hai)
 {
 	int r = SubChanta(mentsu, atama_hai);
 	if (r == 2)
