@@ -89,8 +89,9 @@ int Score::GetScore(
 	vector_str hai_furo = hai_split[1];
 	vector_str hai_ankan = hai_split[2];
 	bool is_menzen = (hai_furo.size() == 0);
-	hai_normal.push_back(agari_hai);
-	hai_normal = SortHai(hai_normal);
+	vector_str hai_normal_all = hai_normal;
+	hai_normal_all.push_back(agari_hai);
+	hai_normal_all = SortHai(hai_normal_all);
 	vector_str hai_plain = SortHai(StringToArrayPlain(tehai + agari_hai));
 	vector_str composition;
 	int shanten_normal = Shanten::GetShantenNormal(tehai + agari_hai, composition);
@@ -172,7 +173,7 @@ int Score::GetScore(
 			ret_yakuman[L"国士無双"] = 1;
 		}
 	}
-	if (is_normal && is_menzen && IsChuren(hai_normal))
+	if (is_normal && is_menzen && IsChuren(hai_normal_all))
 	{
 		size_t n = ASEARCHEX(agari_hai, hai_normal).size();
 		if (n == 1 || n == 3)
