@@ -1,5 +1,10 @@
+GET Version SAORI/1.0
+Charset: UTF-8
+Sender: shioricaller
+
 EXECUTE SAORI/1.0
 Charset: UTF-8
+Sender: shioricaller
 SecurityLevel: Local
 Argument0: shanten
 Argument1: 1m2m3m5p6p7p8p9p9p2s3s4s4s
