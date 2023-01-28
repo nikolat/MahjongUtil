@@ -48,9 +48,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
-    <LocalDebuggerCommand>$(ProjectDir)shioricaller\shioricaller.exe</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>..\..\Debug\MahjongUtil.dll .\ &lt; request.txt &gt; response.txt</LocalDebuggerCommandArguments>
-    <LocalDebuggerWorkingDirectory>$(ProjectDir)shioricaller\</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommand>$(SolutionDir)shioricaller\shioricaller.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>$(OutDir)$(TargetName)$(TargetExt) $(OutDir) &lt; request.txt &gt; response.txt</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)shioricaller\</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
