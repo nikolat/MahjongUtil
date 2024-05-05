@@ -325,7 +325,7 @@ int Score::GetScore(
 		count_fu = 20;
 	else if (ret_han.find(L"七対子") != ret_han.end())
 		count_fu = 25;
-	else if (ret_han.find(L"国士無双") == ret_han.end())
+	else if (ret_yakuman.find(L"国士無双") == ret_yakuman.end())
 		count_fu = fu_sub_max;
 	int score = GetScorePoint(count_yakuman, count_han, count_dora, count_fu, is_oya);
 	fu = count_fu;
@@ -464,8 +464,8 @@ int Score::GetFu(
 	const string_t agari_hai,
 	const string_t bafu_hai,
 	const string_t jifu_hai,
-	const int is_tsumo,
-	const int is_menzen
+	const bool is_tsumo,
+	const bool is_menzen
 )
 {
 	//(1)副底20符
@@ -822,7 +822,7 @@ bool Score::IsJunchan(const vector<vector_str> mentsu, const string_t atama_hai)
 }
 
 //小三元判定
-bool Score::IsShousangen(const vector<vector_str>  mentsu)
+bool Score::IsShousangen(const vector<vector_str> mentsu)
 {
 	int count_sangenpai = 0;
 	bool use_atama = false;
@@ -998,9 +998,9 @@ bool Score::IsChinroutou(const vector_str hai_plain)
 	for (size_t i = 0; i < hai_plain.size(); i++)
 	{
 		if (routou_string.find(hai_plain[i]) == string_t::npos)
-			return 0;
+			return false;
 	}
-	return 1;
+	return true;
 }
 
 //ドラ牌カウント

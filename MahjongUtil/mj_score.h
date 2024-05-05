@@ -41,8 +41,8 @@ private:
 		const string_t agari_hai,
 		const string_t bafu_hai,
 		const string_t jifu_hai,
-		const int is_tsumo,
-		const int is_menzen
+		const bool is_tsumo,
+		const bool is_menzen
 	);
 	//点数を取得
 	static int GetScorePoint(const int count_yakuman, const int count_han, const int count_dora, const int count_fu, const bool is_oya);
