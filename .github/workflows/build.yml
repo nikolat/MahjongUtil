@@ -8,10 +8,10 @@ jobs:
     runs-on: windows-2022
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
+        uses: microsoft/setup-msbuild@v2
 
       - name: Build app for release
         run: msbuild MahjongUtil/MahjongUtil.vcxproj -t:rebuild -property:Configuration=Release
@@ -24,7 +24,7 @@ jobs:
           copy readme.txt Release/readme.txt
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: MahjongUtil
           path: Release
